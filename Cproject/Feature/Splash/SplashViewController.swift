@@ -32,7 +32,7 @@ class SplashViewController: UIViewController {
                // 키윈도우를 찾겠다.
                let window = windowScene.windows.first(where: { $0.isKeyWindow}) {
                 // 루트 뷰 컨트롤러 변경
-                window.rootViewController = HomeViewController()
+                window.rootViewController = viewcontroller
             }
         }
     }

@@ -21,6 +21,7 @@
 		D69F6D472C23D704006CF3E6 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D69F6D462C23D704006CF3E6 /* Colors.xcassets */; };
 		D69F6D492C23D9BA006CF3E6 /* CPColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69F6D482C23D9BA006CF3E6 /* CPColor.swift */; };
 		D69F6D4B2C23DA89006CF3E6 /* CPFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69F6D4A2C23DA89006CF3E6 /* CPFont.swift */; };
+		D6ADA7222C29896400D163C5 /* HomeBannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ADA7212C29896400D163C5 /* HomeBannerCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		D69F6D462C23D704006CF3E6 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		D69F6D482C23D9BA006CF3E6 /* CPColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPColor.swift; sourceTree = "<group>"; };
 		D69F6D4A2C23DA89006CF3E6 /* CPFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPFont.swift; sourceTree = "<group>"; };
+		D6ADA7212C29896400D163C5 /* HomeBannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBannerCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,13 +55,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D680C1E72C2982B900985030 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		D69F6D1A2C21A383006CF3E6 = {
 			isa = PBXGroup;
 			children = (
@@ -79,17 +74,10 @@
 		D69F6D252C21A384006CF3E6 /* Cproject */ = {
 			isa = PBXGroup;
 			children = (
-				D680C1E72C2982B900985030 /* New Group */,
 				D69F6D342C21A385006CF3E6 /* Info.plist */,
-				D69F6D2F2C21A385006CF3E6 /* Assets.xcassets */,
+				D6ADA71E2C2984AF00D163C5 /* Deleagte */,
+				D6ADA71F2C2984B600D163C5 /* Feature */,
 				D69F6D412C23D23C006CF3E6 /* DesignSource */,
-				D69F6D262C21A384006CF3E6 /* AppDelegate.swift */,
-				D69F6D282C21A384006CF3E6 /* SceneDelegate.swift */,
-				D69F6D312C21A385006CF3E6 /* LaunchScreen.storyboard */,
-				D69F6D3A2C21A559006CF3E6 /* Splash.storyboard */,
-				D69F6D3C2C21A5B7006CF3E6 /* SplashViewController.swift */,
-				D680C1E02C297A6800985030 /* Home.storyboard */,
-				D680C1E22C297A7800985030 /* HomeViewController.swift */,
 			);
 			path = Cproject;
 			sourceTree = "<group>";
@@ -97,6 +85,7 @@
 		D69F6D412C23D23C006CF3E6 /* DesignSource */ = {
 			isa = PBXGroup;
 			children = (
+				D69F6D2F2C21A385006CF3E6 /* Assets.xcassets */,
 				D69F6D422C23D33D006CF3E6 /* images.xcassets */,
 				D69F6D462C23D704006CF3E6 /* Colors.xcassets */,
 				D69F6D442C23D430006CF3E6 /* CPImage.swift */,
@@ -104,6 +93,44 @@
 				D69F6D4A2C23DA89006CF3E6 /* CPFont.swift */,
 			);
 			path = DesignSource;
+			sourceTree = "<group>";
+		};
+		D6ADA71D2C2984A900D163C5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D680C1E02C297A6800985030 /* Home.storyboard */,
+				D680C1E22C297A7800985030 /* HomeViewController.swift */,
+				D6ADA7212C29896400D163C5 /* HomeBannerCollectionViewCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D6ADA71E2C2984AF00D163C5 /* Deleagte */ = {
+			isa = PBXGroup;
+			children = (
+				D69F6D262C21A384006CF3E6 /* AppDelegate.swift */,
+				D69F6D282C21A384006CF3E6 /* SceneDelegate.swift */,
+			);
+			path = Deleagte;
+			sourceTree = "<group>";
+		};
+		D6ADA71F2C2984B600D163C5 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				D6ADA7202C2984DC00D163C5 /* Splash */,
+				D6ADA71D2C2984A900D163C5 /* Home */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		D6ADA7202C2984DC00D163C5 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				D69F6D312C21A385006CF3E6 /* LaunchScreen.storyboard */,
+				D69F6D3A2C21A559006CF3E6 /* Splash.storyboard */,
+				D69F6D3C2C21A5B7006CF3E6 /* SplashViewController.swift */,
+			);
+			path = Splash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +220,7 @@
 				D69F6D452C23D430006CF3E6 /* CPImage.swift in Sources */,
 				D69F6D292C21A384006CF3E6 /* SceneDelegate.swift in Sources */,
 				D69F6D3D2C21A5B7006CF3E6 /* SplashViewController.swift in Sources */,
+				D6ADA7222C29896400D163C5 /* HomeBannerCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
